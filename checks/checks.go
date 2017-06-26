@@ -19,3 +19,6 @@ func (test *SelfTest) MissingParamDocs(foo, bar string) {
 // This is incorrectly documented
 func (test *SelfTest) IncorrectDocs(foo, bar string) {
 }
+
+func main() {
+}
