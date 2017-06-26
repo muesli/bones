@@ -9,7 +9,7 @@ problem it detects.
 
 ## Installation
 
-Bones requires Go 1.x (to be determined) or higher. Make sure you have a working Go environment. See the [install instructions](http://golang.org/doc/install.html).
+Bones requires Go 1.2 or higher. Make sure you have a working Go environment. See the [install instructions](http://golang.org/doc/install.html).
 
 The recommended way of installation is to simply `go get github.com/muesli/bones`.
 
