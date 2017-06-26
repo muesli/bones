@@ -45,26 +45,26 @@ func (f *file) walk(fn func(ast.Node) (ast.Node, bool)) ast.Node {
 	return gorewrite.Rewrite(walker(fn), f.f)
 }
 
-func (fl *file) nodeWalk(node ast.Node) (ast.Node, bool) {
+func (f *file) nodeWalk(node ast.Node) (ast.Node, bool) {
 	switch v := node.(type) {
 	case *ast.GenDecl:
 		if v.Tok == token.IMPORT {
 			return node, false
 		}
 		// token.CONST, token.TYPE or token.VAR
-		fl.lastGen = v
+		f.lastGen = v
 		return node, true
 	case *ast.FuncDecl:
-		fl.checkFuncDoc(v)
+		f.checkFuncDoc(v)
 		// Don't proceed inside funcs
 		return node, false
 	case *ast.TypeSpec:
 		// inside a GenDecl, which usually has the doc
 		if v.Doc == nil {
-			v.Doc = fl.lastGen.Doc
+			v.Doc = f.lastGen.Doc
 		}
 
-		fl.checkTypeDoc(v)
+		f.checkTypeDoc(v)
 		node = v
 		// Don't proceed inside types
 		return node, false
