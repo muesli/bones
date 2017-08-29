@@ -21,5 +21,5 @@ The recommended way of installation is to simply `go get github.com/muesli/bones
 
 API docs can be found [here](http://godoc.org/github.com/muesli/bones).
 
-[![Build Status](https://secure.travis-ci.org/muesli/bones.png)](http://travis-ci.org/muesli/bones)
+[![Build Status](https://travis-ci.org/muesli/bones.svg?branch=master)](https://travis-ci.org/muesli/bones)
 [![Go ReportCard](http://goreportcard.com/badge/muesli/bones)](http://goreportcard.com/report/muesli/bones)
