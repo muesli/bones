@@ -19,7 +19,6 @@ The recommended way of installation is to simply `go get github.com/muesli/bones
 
 ## Development
 
-API docs can be found [here](http://godoc.org/github.com/muesli/bones).
-
+[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://godoc.org/github.com/muesli/bones)
 [![Build Status](https://travis-ci.org/muesli/bones.svg?branch=master)](https://travis-ci.org/muesli/bones)
 [![Go ReportCard](http://goreportcard.com/badge/muesli/bones)](http://goreportcard.com/report/muesli/bones)
